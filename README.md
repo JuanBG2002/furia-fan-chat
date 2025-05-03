@@ -69,8 +69,7 @@ SOURCE=2 #Define fonte das informações:
 Blocos em `context/` alimentam o modo GPT do bot com informações atualizadas sobre:
 
 - Organização FURIA
-- Modalidades e line-ups
-- Criadores de conteúdo
+- Informações relevantes para cada jogo que a FURIA joga
 - Regras e diretrizes de resposta
 
 ## 🧠 Estrutura GPT
@@ -78,8 +77,7 @@ Blocos em `context/` alimentam o modo GPT do bot com informações atualizadas s
 Responde com base em:
 
 - Arquivos contextuais por jogo
-- Cache atualizado de partidas/títulos
-- Logs de interação e preferências de fonte
+- Mensagem do User
 
 ## 📄 Licença
 
