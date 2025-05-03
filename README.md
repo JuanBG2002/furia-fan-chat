@@ -29,12 +29,11 @@
 ## 📦 Instalação
 
 ```bash
-git clone https://github.com/seuuser/furia-fan-chat
+git clone https://github.com/JuanBG2002/furia-fan-chat
 cd furia-fan-chat
 npm install
-cp .env.exemplo .env
 # Edite .env com suas credenciais
-npm start
+npm run dev
 ```
 
 ## ⚙️ Variáveis `.env` obrigatórias
