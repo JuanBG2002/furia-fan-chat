@@ -1,0 +1,81 @@
+{
+  "updatedAt": "2025-05-03T21:22:02.530Z",
+  "counterstrike": {
+    "matches": [],
+    "tournaments": []
+  },
+  "valorant": {
+    "matches": [],
+    "tournaments": []
+  },
+  "leagueoflegends": {
+    "matches": [],
+    "tournaments": []
+  },
+  "rocketleague": {
+    "matches": [
+      {
+        "teamLeft": "Team Secret",
+        "teamRight": "FURIA Esports",
+        "time": "16:00",
+        "day": "03",
+        "month": "Maio",
+        "year": 2025,
+        "event": "RLCS SA",
+        "leagueId": 4301,
+        "stream_original": "https://www.twitch.tv/rocketstreetlive",
+        "stream_pt": "https://www.twitch.tv/dudsmelow"
+      }
+    ],
+    "tournaments": [
+      {
+        "name": "RLCS SA",
+        "teamLeft": "Team Secret",
+        "teamRight": "FURIA Esports",
+        "time": "16:00",
+        "day": "03",
+        "month": "Maio",
+        "year": 2025,
+        "event": "RLCS SA",
+        "leagueId": 4301,
+        "stream_original": "https://www.twitch.tv/rocketstreetlive",
+        "stream_pt": "https://www.twitch.tv/dudsmelow"
+      }
+    ]
+  },
+  "pubg": {
+    "matches": [],
+    "tournaments": []
+  },
+  "rainbowsix": {
+    "matches": [
+      {
+        "teamLeft": "FURIA Esports",
+        "teamRight": "Elevate",
+        "time": "09:00",
+        "day": "10",
+        "month": "Maio",
+        "year": 2025,
+        "event": "RE:L0:AD",
+        "leagueId": 5392,
+        "stream_original": "https://www.twitch.tv/rainbow6",
+        "stream_pt": "https://www.twitch.tv/rainbow6"
+      }
+    ],
+    "tournaments": [
+      {
+        "name": "RE:L0:AD",
+        "teamLeft": "FURIA Esports",
+        "teamRight": "Elevate",
+        "time": "09:00",
+        "day": "10",
+        "month": "Maio",
+        "year": 2025,
+        "event": "RE:L0:AD",
+        "leagueId": 5392,
+        "stream_original": "https://www.twitch.tv/rainbow6",
+        "stream_pt": "https://www.twitch.tv/rainbow6"
+      }
+    ]
+  }
+}

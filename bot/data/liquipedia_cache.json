@@ -1,0 +1,153 @@
+{
+  "updatedAt": "2025-05-03T21:27:02.531Z",
+  "counterstrike": {
+    "matches": [],
+    "tournaments": [
+      {
+        "name": "PGL Astana 2025",
+        "day": "10",
+        "month": "Maio",
+        "year": 2025,
+        "endsAt": "18 de Maio",
+        "ongoing": false
+      },
+      {
+        "name": "Intel Extreme Masters Dallas 2025",
+        "day": "19",
+        "month": "Maio",
+        "year": 2025,
+        "endsAt": "25 de Maio",
+        "ongoing": false
+      },
+      {
+        "name": "BLAST.tv Austin Major 2025",
+        "day": "02",
+        "month": "Junho",
+        "year": 2025,
+        "endsAt": "22 de Junho",
+        "ongoing": false
+      }
+    ]
+  },
+  "leagueoflegends": {
+    "matches": [
+      {
+        "teamLeft": "FUR",
+        "score": "",
+        "format": "",
+        "teamRight": "RED",
+        "time": "15:00",
+        "event": "LTA South Split 2 2025",
+        "day": "03",
+        "month": "Maio",
+        "year": 2025
+      }
+    ],
+    "tournaments": [
+      {
+        "name": "LTA South 2025 Split 2",
+        "day": "05",
+        "month": "Abril",
+        "year": 2025,
+        "endsAt": "15 de Junho",
+        "ongoing": true
+      }
+    ]
+  },
+  "rainbowsix": {
+    "matches": [
+      {
+        "teamLeft": "FURIA",
+        "score": "",
+        "format": "",
+        "teamRight": "ELV",
+        "time": "12:00",
+        "event": "RE:L0:AD 2025 - Group Stage",
+        "day": "10",
+        "month": "Maio",
+        "year": 2025
+      }
+    ],
+    "tournaments": [
+      {
+        "name": "RE:L0:AD 2025 - Group Stage",
+        "day": "10",
+        "month": "Maio",
+        "year": 2025,
+        "endsAt": null,
+        "ongoing": true
+      }
+    ]
+  },
+  "rocketleague": {
+    "matches": [
+      {
+        "teamLeft": "FUR",
+        "score": "",
+        "format": "",
+        "teamRight": "TS",
+        "time": "18:45",
+        "event": "RLCS 2025 - SAM Open 4",
+        "day": "03",
+        "month": "Maio",
+        "year": 2025
+      }
+    ],
+    "tournaments": [
+      {
+        "name": "RLCS 2025 - SAM Open 4",
+        "day": "03",
+        "month": "Maio",
+        "year": 2025,
+        "endsAt": null,
+        "ongoing": true
+      }
+    ]
+  },
+  "pubg": {
+    "matches": [],
+    "tournaments": []
+  },
+  "valorant": {
+    "matches": [],
+    "tournaments": [
+      {
+        "name": "VCT 2025: Americas Stage 2",
+        "day": "01",
+        "month": "Julho",
+        "year": 2025,
+        "endsAt": null,
+        "ongoing": false
+      }
+    ]
+  },
+  "kingsleague": {
+    "matches": [
+      {
+        "teamLeft": "FNK",
+        "score": "",
+        "format": "",
+        "teamRight": "FUR",
+        "time": "19:00",
+        "event": "Kings League Brasil 2025",
+        "url": "https://kingsleague.pro/en/brazil/matches/1698-fnk-vs-fur",
+        "day": "03",
+        "month": "Maio",
+        "year": 2025
+      },
+      {
+        "teamLeft": "FLX",
+        "score": "",
+        "format": "",
+        "teamRight": "FUR",
+        "time": "17:00",
+        "event": "Kings League Brasil 2025",
+        "url": "https://kingsleague.pro/en/brazil/matches/1701-flx-vs-fur",
+        "day": "05",
+        "month": "Maio",
+        "year": 2025
+      }
+    ],
+    "tournaments": []
+  }
+}

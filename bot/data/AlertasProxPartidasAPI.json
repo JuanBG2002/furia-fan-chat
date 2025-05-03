@@ -1,0 +1,17 @@
+[
+  {
+    "jogo": "rocketleague",
+    "time1": "Team Secret",
+    "time2": "FURIA Esports",
+    "hora": "16:00",
+    "dia": "03",
+    "mes": "Maio",
+    "ano": 2025,
+    "evento": "RLCS SA",
+    "stream_original": "https://www.twitch.tv/rocketstreetlive",
+    "stream_pt": "https://www.twitch.tv/dudsmelow",
+    "origem": "api",
+    "_sortKey": 1746298800000,
+    "alertaDisparado": true
+  }
+]

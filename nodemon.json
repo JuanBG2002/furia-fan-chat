@@ -1,0 +1,10 @@
+{
+  "watch": ["bot"],
+  "ignore": [
+    "bot/data/liquipedia_cache.json",
+    "bot/data/api_cache.json",
+    "bot/data/AlertasProxPartidas*.json",
+    "bot/data/UsuariosComNotificacao.json"
+  ],
+  "ext": "js,json,env"
+}
