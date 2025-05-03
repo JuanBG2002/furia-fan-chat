@@ -40,24 +40,30 @@ npm start
 ## ⚙️ Variáveis `.env` obrigatórias
 
 ```env
-BOT_TOKEN=seu_token_do_bot
-PANDASCORE_TOKEN=seu_token_pandascore
-FURIA_TEAM_ID_CS=126689
-FURIA_TEAM_ID_VALORANT=...
-FURIA_TEAM_ID_LOL=...
-FURIA_TEAM_ID_RL=...
-FURIA_TEAM_ID_PUBG=...
-FURIA_TEAM_ID_R6SIEGE=...
-SOURCE=3 # 1=API, 2=Scraping, 3=Ambos
+BOT_TOKEN= #Bot do telegram, BotFather
+
+PANDASCORE_TOKEN=
+API_INTERVAL_MINUTES=10 #Intervalo que o cache da API vai se atualizar
+FURIA_TEAM_ID=124530 #Team ID PandaScore Furia = 124530
+FURIA_TEAM_ID_VALORANT=128477 #Team ID PandaScore Furia = 128477
+FURIA_TEAM_ID_LOL=126688 #Team ID PandaScore Furia = 126688
+FURIA_TEAM_ID_RL=128933 #Team ID PandaScore Furia = 128933
+FURIA_TEAM_ID_PUBG=126886 #Team ID PandaScore Furia = 126886
+FURIA_TEAM_ID_R6SIEGE=127596 #Team ID PandaScore Furia = 127596
+ALERT_CHECK_INTERVAL_MINUTES=1 #Intervalo que o bot vai verificar se tem notificações para disparar
+OPENAI_KEY=
+GPT_DAILY_LIMIT=20 #Limite de mensagens que cada user pode mandar par ao GPT por dia
+GPT_MAX_CHARACTERS=3200 #Máximo de caracteres que cada user pode mandar par ao GPT por dia
+LIQUIPEDIA_INTERVAL_MINUTES=15 #Intervalo que o Script vai fazer scrape das páginas da Liquipedia
+LIQUIPEDIA_TEAM_SLUG=FURIA #Final URL da Liquipedia
+FURIA_STORE_URL=https://furia.gg
+FURIA_FANS_CHAT=https://t.me/csgo #Não existe ainda, csgo como placeholder
+DEBUG=true #Ativa comentários no terminal
+SOURCE=2 #Define fonte das informações: 
+#1 = apenas Api (Pandascore) Não tem informações sobre KingsLeague nem próximos campeonatos, mas não utiliza scraping (Não recomendado) Usa caching, não atualiza a cada requisição
+#2 = Scrape (Liquipedia e KingsLeague) + Api faz scrape das páginas web para obter informações (Feita de tempo em tempo configurável, caching, não à cada requisição) Obs. Acompanhar ao vivo e URL de partidas ainda utiliza API do PandaScore pois o Liquipedia tem informações limitadas nesse quesito e não disponibiliza link de transmissão direto
+#3 = Escolher no inicio do chat, dá a opção de escolher no inicio do bot qual fonte que usar (Para debug/testes)
 ```
-
-## 🧪 Scripts e Ferramentas Extras
-
-Localizados em `ferramentas/`:
-
-- `listarScripts.mjs` – Exporta todos os scripts com caminhos
-- `removerDuplicatas.js` – Limpeza de dados redundantes
-- `atualizarCalendarios.js` – Atualização dos caches de partidas
 
 ## 📚 Contexto para o GPT
 
@@ -67,12 +73,6 @@ Blocos em `context/` alimentam o modo GPT do bot com informações atualizadas s
 - Modalidades e line-ups
 - Criadores de conteúdo
 - Regras e diretrizes de resposta
-
-## 📖 Comandos principais do Bot
-
-- `/start` – Menu inicial com escolha de fonte e jogo
-- `/gpt` – Ativa modo conversa
-- `/sair` – Encerra o modo conversa
 
 ## 🧠 Estrutura GPT
 
