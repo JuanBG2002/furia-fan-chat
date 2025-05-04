@@ -67,11 +67,14 @@ const verificarAlertas = (bot) => {
     alertas.forEach(alerta => {
       try {
         if (alerta.alertaDisparado) return;
-
+    
         const dataAlvo = parseDateTime(alerta);
         if (agora >= dataAlvo) {
+          alerta.alertaDisparado = true; 
+          atualizou = true;
+    
           const jogoKey = alerta.jogo?.toLowerCase().trim();
-
+          
           if (!Object.keys(JOGOS_VALIDOS).includes(jogoKey)) {
             console.warn(`⚠️ Alerta ignorado: jogo desconhecido → ${jogoKey}`);
             return;
