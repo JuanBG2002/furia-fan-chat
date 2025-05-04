@@ -8,7 +8,8 @@ import {
   abreviacoes,
   normalizeTeamName,
   formatTime,
-  FULL_MONTHS_PT
+  FULL_MONTHS_PT,
+  mesParaNumero
 } from '../helpers/formatacao.js';
 
 const fonte = 'Fonte: Liquipedia.net';
@@ -22,6 +23,8 @@ async function readCache() {
     return {};
   }
 }
+
+
 
 export default function registerScrapGames(bot) {
   for (const [alias, cfg] of Object.entries(GAMES)) {
@@ -133,8 +136,8 @@ export default function registerScrapGames(bot) {
     );
 
     partidas.sort((a, b) => {
-      const da = new Date(`${a.year}-${a.month}-${a.day}`);
-      const db = new Date(`${b.year}-${b.month}-${b.day}`);
+      const da = new Date(a.year, mesParaNumero[a.month], a.day);
+      const db = new Date(b.year, mesParaNumero[b.month], b.day);
       return da - db;
     });
 

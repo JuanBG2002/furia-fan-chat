@@ -142,22 +142,22 @@ export default function registerNotifications(bot) {
       });
     });
 
-    bot.action(new RegExp(`^CONFIRM_${key}_(ON|OFF)$`), async ctx => {
-      const [match, keyMatch, mode] = ctx.match;
+    bot.action(/^CONFIRM_(.+)_(ON|OFF)$/, async ctx => {
+      const [, keyMatch, mode] = ctx.match;
       const game = GAMES[keyMatch];
       const userId = ctx.chat.id;
-
+    
       if (!game) {
         return ctx.answerCbQuery('⚠️ Jogo inválido.');
       }
-
+    
       try {
         await updateNotifications(game.key, userId, mode === 'ON');
-
+    
         const message = mode === 'ON'
           ? `✅ Inscrito em ${game.name}!\n\nVocê receberá alertas de novas partidas!`
           : `❌ Notificações para ${game.name} desligadas.`;
-
+    
         await safeEdit(ctx, escapeMarkdownV2(message), {
           parse_mode: 'MarkdownV2',
           reply_markup: {
@@ -170,5 +170,7 @@ export default function registerNotifications(bot) {
         await ctx.answerCbQuery('⚠️ Falha ao atualizar configurações!');
       }
     });
+    
+    
   });
 }
